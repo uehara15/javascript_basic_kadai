@@ -1,5 +1,8 @@
-document.getElementById("btn").addEventListener("click", function() {
-  setTimeout(function() {
-    document.getElementById("text").textContent = "ボタンをクリックしました";
-  }, 2000); // 2000ミリ秒 = 2秒
+const btn = document.getElementById("btn");
+const text = document.getElementById("text");
+
+btn.addEventListener("click", function() {
+setTimeout(function() {
+text.textContent = "ボタンをクリックしました";
+}, 2000);
 });
